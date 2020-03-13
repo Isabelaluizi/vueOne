@@ -1,22 +1,27 @@
 <template>
     <div id="body-container">
-        <h1> {{ content }}</h1>
+      <BodyOne content="Click here"/>
+      <BodyTwo content="This is body part two"/>
+      <BodyThree content="This is body part three"/>
+        
     </div>
 </template>
 
 <script>
+import BodyOne from './BodyOne.vue'
+import BodyTwo from './BodyTwo.vue'
+import BodyThree from './BodyThree.vue'
+
 export default {
   name: 'Body',
- 
-  props: {
-    content: String
+   components: {
+    BodyOne,
+    BodyTwo,
+    BodyThree
   }
+  
 }
+
 </script>
 
-<style scoped>
-  #body-container {
-      width:100vw;
-      height:80vh;
-  }
-</style>
+
