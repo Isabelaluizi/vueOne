@@ -1,19 +1,22 @@
 <template>
   <div id="app">
     <Header  content="This is the header" />
-    <Content content="Party" />
+    <Body content="This is the body" />
+    <Footer content="This is the footer" />
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
-import Content from './components/Content.vue'
+import Body from './components/Body.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    Content
+    Body,
+    Footer
   }
 }
 </script>
